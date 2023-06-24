@@ -18,7 +18,6 @@ import {
   ChevronRightOutlined,
   HomeOutlined,
   ShoppingCartOutlined,
-  GroupsOutlined,
   ReceiptLongOutlined,
   PublicOutlined,
   PointOfSaleOutlined,
@@ -54,6 +53,10 @@ const navItems = [
   {
     text: "Transactions",
     icon: <ReceiptLongOutlined />,
+  },
+  {
+    text: "Geography",
+    icon: <PublicOutlined />,
   },
   {
     text: "Sales",
@@ -110,6 +113,7 @@ const Sidebar = ({
         <Drawer
           open={isSidebarOpen}
           onClose={() => setIsSidebarOpen(false)}
+          variant="persistent"
           anchor="left"
           sx={{
             width: drawerWidth,
